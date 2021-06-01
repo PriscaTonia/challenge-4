@@ -1,0 +1,198 @@
+/* Mobile first approach. */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top 0%, bottom 0%;
+}
+/* styling the first section */
+.upper-section, .lower-section{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 25px 20px 25px;
+}
+.upper-section .intro h3{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.7rem;
+    color: hsl(300, 43%, 22%);
+    text-align: center;
+    padding-bottom: 20px;
+}
+.upper-section .intro p{
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1rem;
+    color: hsl(303, 10%, 53%);
+    padding-bottom: 20px;
+}
+/* first section - stats boxes */
+.upper-section .stats{
+    display: flex;
+    flex-direction: column;
+}
+.upper-section .stats .stats-info{
+    background-color: hsl(300, 24%, 96%);
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+.stats-info .stars svg{
+    margin: 2px;
+}
+.stats-info span{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: hsl(300, 43%, 22%);
+}
+
+/* styling the second section */
+.lower-section{
+    padding: 25px;
+}
+.lower-section .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    padding: 30px;
+    min-height: 40vh;
+    border-radius: 8px;
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+.cards .profile{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    grid-gap: 0px;
+    /* padding-bottom: 15px; */
+}
+.cards .profile img{
+    border-radius: 50%;
+    width: 65%;
+}
+.cards .profile p{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.cards .profile p span{
+    color: hsl(333, 80%, 67%);
+}
+.cards p{
+    font-size: 0.7rem;
+    line-height: 1rem;
+}
+
+@media screen and (min-width: 500px){
+    .upper-section{
+        padding: 100px 40px 20px 40px ;
+    }
+    .lower-section{
+        padding: 10px 40px 20px;
+    }
+}
+
+@media screen and (min-width: 765px){
+    body{
+        background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        background-position: top 0% left -20%, bottom -30% right 20%;
+    }
+    .upper-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 130px 50px 30px;
+    }
+    /* .upper-section .intro{
+        background-color: lawngreen;
+    } */
+    .upper-section .intro h3{
+        font-size: 1.8rem;
+        text-align: left;
+        width: 80%;
+    }
+    .upper-section .intro p{
+        font-size: 0.87rem;
+        width: 95%;
+        text-align: left;
+    }
+
+    .upper-section .stats .stats-info{
+        display: flex;
+        width: 90%;
+        padding: 10px 10px;
+    }
+    .stats-info .stars{
+        padding-right: 20px;
+    }
+    .stats .first{
+        align-self: flex-start;
+    }
+    .stats .second{
+        align-self: center;
+    }
+    .stats .third{
+        align-self: flex-end;
+    }
+    .stats-info span{
+        font-size: 0.75rem;
+    }
+
+    /* section section */
+    .lower-section{
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0px 50px 0px;
+        padding: 0px 50px;
+        min-height: 50vh;
+    }
+
+    .lower-section .cards{
+        max-width: 25vw;
+        max-height: 50vh;
+        margin-right: 20px;
+    }
+    .cards .profile{
+        padding-bottom: 20px;
+    }
+    .top{
+        align-self: flex-start;
+    }
+     .center{
+        align-self: center;
+    }
+     .bottom{
+        align-self: flex-end;
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .upper-section{
+        padding: 130px 120px 30px;
+    }
+
+    .upper-section .intro h3{
+        width: 60%;
+    }
+    .upper-section .intro p{
+        width: 90%;
+    }
+
+    .upper-section .stats .stats-info{
+        width: 90%;
+        padding: 20px 15px;
+    }
+    .lower-section{
+        padding: 0px 120px;
+     
+    }
+}
