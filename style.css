@@ -62,7 +62,7 @@ body{
     justify-content: space-evenly;
     margin-bottom: 20px;
     padding: 30px;
-    min-height: 40vh;
+    max-height: 40vh;
     border-radius: 8px;
     background-color: hsl(300, 43%, 22%);
     color: hsl(0, 0%, 100%);
@@ -156,8 +156,8 @@ body{
     }
 
     .lower-section .cards{
-        max-width: 25vw;
-        max-height: 50vh;
+        /* max-width: 25vw;
+        max-height: 50vh; */
         margin-right: 20px;
     }
     .cards .profile{
