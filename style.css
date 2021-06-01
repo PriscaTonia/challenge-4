@@ -109,7 +109,7 @@ body{
     }
     .upper-section{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
         padding: 130px 50px 30px;
     }
     /* .upper-section .intro{
@@ -121,18 +121,23 @@ body{
         width: 80%;
     }
     .upper-section .intro p{
-        font-size: 0.75rem;
-        width: 95%;
+        font-size: 0.83rem;
+        max-width: 90%;
         text-align: left;
+    }
+    .upper-section .stats{
+        width: 70%;
+        display: flex;
+        justify-self: flex-end;
     }
 
     .upper-section .stats .stats-info{
         display: flex;
-        width: 90%;
+        width: 70%;
         padding: 10px 10px;
     }
     .stats-info .stars{
-        padding-right: 20px;
+        padding-right: 40px;
     }
     .stats .first{
         align-self: flex-start;
@@ -144,22 +149,22 @@ body{
         align-self: flex-end;
     }
     .stats-info span{
-        font-size: 0.75rem;
+        font-size: 0.9rem;
     }
 
     /* section section */
     .lower-section{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         margin: 20px 0px 50px 0px;
         padding: 0px 50px;
-        min-height: 50vh;
+        min-height: 35vh;
     }
 
     .lower-section .cards{
-        /* max-width: 25vw;
-        max-height: 50vh; */
-        margin-right: 20px;
+        max-width: 25vw;
+        min-height: 30vh;
     }
     .cards .profile{
         padding-bottom: 10px;
@@ -178,14 +183,18 @@ body{
 
 @media screen and (min-width: 900px){
     .upper-section{
-        padding: 130px 120px 30px;
+        padding: 130px 200px 30px;
+       
     }
-
+    /* .upper-section .intro{
+        background-color: brown;
+    } */
     .upper-section .intro h3{
         width: 60%;
     }
     .upper-section .intro p{
-        width: 90%;
+        max-width: 100%;
+        font-size: 0.75rem;
     }
 
     .upper-section .stats .stats-info{
@@ -193,7 +202,7 @@ body{
         padding: 20px 15px;
     }
     .lower-section{
-        padding: 0px 120px;
+        padding: 0px 200px;
      
     }
 }
